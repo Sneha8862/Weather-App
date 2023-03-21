@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.tab1 {
+  background: #FF5733;
+  text-align: center;
+}
+
+.tab2 {
+  background: #99A3A4;
+  text-align: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .tables {
+
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .col {
+    flex: 1 0 17%;
+    /* The important bit. This percentage decides your columns. 
+     The percent can be px. It just represents your minimum starting width.
+      */
+    margin: 5px;
+
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  .col {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+  }
+
+}
